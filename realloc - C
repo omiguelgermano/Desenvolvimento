@@ -1,0 +1,21 @@
+//https://docs.google.com/document/d/1mDZYHjepcTShSVOXlJCVqMkjHTSZDPiIEfGt5dc-1nE/edit?usp=sharing 
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    int i, tam = 20;
+    char *ptr;
+
+
+    ptr = (char *) realloc(NULL, tam * sizeof(char));
+
+    for(i = 0; i < tam; i++){
+        ptr[i] = i + 65;
+        printf("\n\tValor de ptr[%i]: %c", i, ptr[i]);
+    }
+    free(ptr);
+
+    printf("\n\n");
+    return 0;
+}
