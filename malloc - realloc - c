@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    
+    int i, tam = 10, newtam = 20;
+    
+    char *nome;
+    
+    nome = (char*) malloc(tam * sizeof(char));
+    
+    nome = "Miguel";
+    printf("\n\t%s", nome);
+    
+    nome = (char*) realloc(NULL, newtam * sizeof(char));
+    
+    nome = "Miguel Germano - realloc'20'";
+    printf("\n\t%s", nome);
+    
+    //free(nome);
+
+    printf("\n\n");
+    return 0;
+}
