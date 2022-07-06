@@ -1,0 +1,16 @@
+
+print("------------------------------------------")
+print("Avaliação dos alunos da Escolar School Rec")
+print("------------------------------------------\n")
+
+nome = str(input("Digite o nome da aluna: "))
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+faltas = int(input("Digite o número de faltas da aluna: "))
+
+aprovado = (nota1 + nota2) / 2
+
+if aprovado >= 7 and faltas <= 3:
+    print("A aluna: {} foi aprovado!\nNota: {}\nFaltas: {}".format(nome, aprovado, faltas))
+else:
+  print("A aluna: {} foi reprovada!\nSua nota final foi {} e teve um total de {} faltas no módulo!".format(nome, aprovado, faltas))
